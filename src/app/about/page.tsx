@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import HeroImage from '../../../public/hero-image.png'
 
 export default function AboutPage() {
   return (
@@ -11,7 +12,7 @@ export default function AboutPage() {
                 <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
                     <div className="relative h-[300px] w-full">
                         <Image
-                            src="/hero-image.png"
+                            src={HeroImage.src}
                             alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
                             width={350}
                             height={350}
