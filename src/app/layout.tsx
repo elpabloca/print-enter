@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from 'next/link'
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 import PFLogoIcon from "../../public/printforge-logo-icon.svg"
 import PFLogo from "../../public/printforgelogo.svg"
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <header className="w-full bg-white">
           <nav className="flex justify-between px-6 py-4">
+            <Link href="/">
             <div className="relative flex">
               {/* Desktop logo */}
               <Image
@@ -52,9 +54,14 @@ export default function RootLayout({
                 height={48}
               />
             </div>
+            </Link>
             <ul className="flex items-center gap-2.5">
-              <p>3D Models</p>
-              <p>About</p>
+              <li className="text-sm uppercase cursor-pointer">
+                <Link href="/3d-models">3D Models</Link>
+              </li>
+              <li className="text-sm uppercase cursor-pointer">
+                <Link href="/about">About</Link>
+              </li>
             </ul>
           </nav>
         </header>
