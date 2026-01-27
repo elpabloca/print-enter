@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from 'next/link'
+import type { RootLayoutProps } from "../app/types"
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 import PFLogoIcon from "../../public/printforge-logo-icon.svg"
 import PFLogo from "../../public/printforgelogo.svg"
@@ -25,9 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}:RootLayoutProps) {
   return (
     <html lang="en">
       <body
