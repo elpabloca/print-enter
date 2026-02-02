@@ -1,4 +1,4 @@
-import modelsData from "../data/model.json"
+import modelsData from "../data/models.json"
 import type { Model } from "../types"
 
 export async function getAllModels() {
