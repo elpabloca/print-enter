@@ -6,7 +6,6 @@ import { ModelCardProps } from "@/app/types"
 import placeholderImg from "../../../public/placeholder.svg"
 
 export default function ModelCard({ model }: ModelCardProps) {
-    console.log(placeholderImg)
     return (
         <Link
             href={`/3d-models/${model.id}`}

@@ -15,6 +15,12 @@ export type RootLayoutProps = Readonly<{
   children: React.ReactNode;
 }>
 
+export type CategoryPageProps = {
+    params: Promise<{
+        categoryName: string
+    }>
+}
+
 export type Category = {
     displayName: string
     slug: string
